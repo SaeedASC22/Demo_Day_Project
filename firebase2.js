@@ -110,12 +110,12 @@ function makeSingleMessageHTML(usernameTxt, messageTxt) {
     parentDiv.append(usernameP);
 
     //Create message P Tag
-     let messageP = document.createElement('p');
-     messageP.innerHTML = messageTxt;
-     parentDiv.append(messageP);
+    let messageP = document.createElement('p');
+    messageP.innerHTML = messageTxt;
+    parentDiv.append(messageP);
 
      //Return Parent Div
-     return parentDiv;
+    return parentDiv;
 }
 
 /**

@@ -4,19 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Demo-Day Projecte>
+    <title>Demo-Day Project</title>
     <script src = "main.js" defer></script>
 
     <script defer src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
     <script defer src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
 
         <!-- @NOTE initializing firebase -->
-        <script defer src="init-firebase.js"></script>
+        <script src="init-firebase.js" defer></script>
 
         <!-- @NOTE link our main.js AFTER we load initialize firebase -->
-        <script defer src="data1.js"></script>
+        <script src="data1.js" defer></script>
 
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -25,7 +25,7 @@
     </div>
     <div id="navBar">  
         <a href = "index.html">Home</a>
-        <a href = otherPages/jobs.html> Getting a Job </a>
+        <a href = 'otherPages/jobs.html'> Getting a Job </a>
         <a href = 'otherPages/taxes.html'> Doing Your Taxes</a>
         <a href = 'otherPages/blogs.html'> Blogs </a>
         <a href = 'otherPages/articleBuilder.html'> Article Builder </a>        
@@ -55,8 +55,12 @@
             and teach more life skills.
         </p>
     </div>
-    <div id="gallery">
-        <img src="">
+    <div id="picture1">
+        <img src ="images/youngPeople1.png">
+    </div>
+    
+    <div id="picture2">
+        <img src="images/youngPeople2.png">
     </div>
 </body>
 </html>
