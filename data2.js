@@ -13,8 +13,8 @@
   */
  
  const allMessages = document.getElementById('all-messages');
- const usernameElem = document.getElementById('username');
- const messageElem = document.getElementById('message');
+ const titleElem = document.getElementById('title');
+ const paragraphElem = document.getElementById('paragraph');
  const sendBtn = document.getElementById('send-btn');
  sendBtn.onclick = updateDB;
  
@@ -31,12 +31,12 @@
   */
  function updateDB(event) {
      //Prevent Default refresh
-     event.preventDefault();
+        event.preventDefault();
      
      //Create data object
      const data = {
-         USERNAME: usernameElem.value,
-         MESSAGE: messageElem.value
+         TITLE: titleElem.value,
+         PARAGRAPH: paragraphElem.value
      };
  
  console.log(data);
@@ -45,7 +45,7 @@
  //Write to our database
  database.push(data);
  
- messageElem.value=''
+ 
  
  }
  
@@ -75,12 +75,12 @@
  function addMessageToBoard(rowData) {
      const data = rowData.val()
  
- let singleMessage = makeSingleMessageHTML(data.USERNAME, data.MESSAGE);
- allMessages.append(singleMessage);
+ let singleArticle = makeSingleArticleHTML(data.TITLE, data.PARAGRAPH);
+ allMessages.append(singleArticle);
  }
  
  /** 
-  * @TODO create a function called makeSingleMessageHTML which takes
+  * @TODO create a function called makesingleArticleHTML which takes
   * two parameters, usernameTxt and messageTxt, that:
   *      - creates a parent div with the class .single-message
   * 
@@ -97,24 +97,24 @@
   *      - returns the parent div
   */
  
- function makeSingleMessageHTML(usernameTxt, messageTxt) {
+ function makeSingleArticleHTML(titleTxt, paragraphTxt) {
      //Create Parent Div
      let parentDiv = document.createElement('div');
      //Add Class name .single-messgae
-     parentDiv.className='single-message';
+     parentDiv.className='single-article';
  
      //Create Username P Tag
-     let usernameP = document.createElement('p');
-     usernameP.className = 'single-message-username';
-     usernameP.innerHTML = usernameTxt + ':';
+     let titleP = document.createElement('p');
+     titleP.className = 'single-article-title';
+     titleP.innerHTML = titleTxt + ':';
  
      // Append username
-     parentDiv.append(usernameP);
+     parentDiv.append(titleP);
  
      //Create message P Tag
-      let messageP = document.createElement('p');
-      messageP.innerHTML = messageTxt;
-      parentDiv.append(messageP);
+      let paragraphP = document.createElement('p');
+      paragraphP.innerHTML = paragraphTxt;
+      parentDiv.append(paragraphP);
  
       //Return Parent Div
       return parentDiv;

@@ -4,32 +4,27 @@
 
 
 
-
-
-
-
-
-
 /* Blog style setup */
 :root {
-    --primary: #1C2C35;
-    --secondary: #2C5763;
-    --accent: #63A9BB;
+    --primary: #374452;
+    --secondary: #9e1487;
+    --accent: #217483;
 }
 
-#picture1 {
-
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 body {
     /* size and colors */
     height: 100vh;
     background-color: var(--primary);
     color: #fff;
+    
 
     /* flexbox styling */
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    
 
     /* text */
     font-family: Arial, Helvetica, sans-serif;
@@ -40,9 +35,10 @@ body {
 #title {
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
+    background-color: rgba(223, 113, 11, 0.068);
 }
 #welcome {
-    text-align: left;
+    text-align: center;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -97,7 +93,8 @@ body {
 
     /* flexbox */
     display: flex;
-    justify-content: space-around;
+    flex-direction: row;
+    justify-content: space-around; 
     align-items: center;
 }
 
@@ -126,7 +123,8 @@ form label {
 
 .input-container {
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    /* justify-content: space-between;*/
     align-items: center;
 }
 
@@ -162,4 +160,30 @@ form label {
 .single-message-username {
     font-weight: 600;
 }
+
+#navBar{
+    display: flex;
+    flex-direction: row;
+    background-color: #777777;
+    width:100%;
+    padding: 1% ;
+    justify-content: space-around;
+}
+
+#firstTitle{
+    display: flex;
+    justify-content: center;
+}
+
+.images {
+    display:flex;
+    justify-content:center;
+}
+
+.text {
+    text-align: center;
+}
+
+
+
 /* Blog style end */

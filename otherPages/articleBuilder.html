@@ -4,19 +4,71 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Article Builder</title>
+    <script  src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script  src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+    <script defer src="../data2.js"></script>
+
+    <script src="../firebase2.js"></script>
+    <link rel="stylesheet" href="../style.css">
 </head>
+
 <body>
     <div id="firstTitle">
         <h1> All Star Life </h1>
     </div>
     <div id="navBar">  
         <a href = "../index.html">Home</a>
-        <a href = job.html> Getting a Job </a>
+        <a href = jobs.html> Getting a Job </a>
         <a href = 'taxes.html'> Doing Your Taxes</a>
         <a href = 'blogs.html'> Blogs </a>
         <a href = 'articleBuilder.html'> Article Builder</a>
     </div>
+
+        <div id="article-container">
+            <h1 id="header">Article Building Section</h1>        
+    
+            <!-- @NOTE this is where we'll append messages -->
+            <div id="all-messages">
+                <!-- @NOTE sample message -->
+                <!-- <div class="single-message">
+                    <p class="single-message-username">andymina:</p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                        Doloremque laboriosam dignissimos molestias ad illum odio
+                        dolor beatae dolore! Possimus laborum culpa debitis at
+                        obcaecati sit assumenda, placeat delectus reiciendis
+                        accusamus!
+                    </p>
+                </div> -->
+            </div>
+    
+            <div id="typing-container">
+                <form>
+                    <!-- @NOTE this input has an id #username -->
+                    <div class="input-container">
+                        <label>Title:</label>
+                        <input
+                            type="text"
+                            id="title"
+                        />
+                    </div>
+                    
+                    <!-- @NOTE this input has an id #message -->
+                    <div class="input-container">
+                        <label>Paragraph:</label>
+                        <input
+                            type="text"
+                            id="paragraph"
+                        />
+                    </div>
+                </form>
+    
+                <button id="send-btn">Send</button>
+            </div>
+        </div>
+        
+
 
     
 </body>

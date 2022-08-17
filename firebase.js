@@ -1,12 +1,11 @@
 const firebaseConfig = {
-    apiKey: "AIzaSyAU62-mKqqkXYJY0PVAs8GEpjD5wIZoKnQ",
-  authDomain: "firemessages-28ae4.firebaseapp.com",
-  databaseURL: "https://firemessages-28ae4-default-rtdb.firebaseio.com",
-  projectId: "firemessages-28ae4",
-  storageBucket: "firemessages-28ae4.appspot.com",
-  messagingSenderId: "650297507446",
-  appId: "1:650297507446:web:969f081e997fbb2357a957",
-  measurementId: "G-Y7HFNB046M"
+  apiKey: "AIzaSyANUsHCButrkmfEdULTTZdpB0cP7MHU5HI",
+  authDomain: "blog-b22eb.firebaseapp.com",
+  projectId: "blog-b22eb",
+  storageBucket: "blog-b22eb.appspot.com",
+  messagingSenderId: "678471425744",
+  appId: "1:678471425744:web:4e388c7c854c2fc78b08d5",
+  measurementId: "G-WY9PPFJZKE"
 };
 
 // initialize the firebase app with this built-in function
