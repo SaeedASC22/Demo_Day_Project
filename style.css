@@ -17,10 +17,11 @@ img {
     margin-right: auto;
 }
 body {
+    
     /* size and colors */
     height: 100vh;
     background-color: var(--primary);
-    color: #fff;
+    
     
 
     /* flexbox styling */
@@ -29,7 +30,10 @@ body {
     /* text */
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
+
     
+    
+
 }
 
 
@@ -185,6 +189,11 @@ form label {
     text-align: center;
 }
 
+a:link {
+    color: rgb(103, 199, 103);
+}
 
-
+a:visited {
+    color: rgb(103, 199, 103);
+}
 /* Blog style end */
