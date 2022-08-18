@@ -21,6 +21,7 @@ body {
     /* size and colors */
     height: 100vh;
     background-color: var(--primary);
+    color:rgb(185, 207, 106);
     
     
 
